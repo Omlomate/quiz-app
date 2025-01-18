@@ -60,10 +60,11 @@ const QuizPage = ({ quizData, setQuizData, userAnswers, setUserAnswers }) => {
     // Submit quiz and navigate to results page
     const submitQuiz = () => {
         alert('Quiz Submitted');
-        const encodedData = encodeURIComponent(JSON.stringify(quizData));
-        const encodedAnswers = encodeURIComponent(JSON.stringify(userAnswers));
-        window.location.href = `/result?data=${encodedData}&answers=${encodedAnswers}`;
+        localStorage.setItem("quizData", JSON.stringify(quizData));
+        localStorage.setItem("userAnswers", JSON.stringify(userAnswers));
+        window.location.href = "./result.html"; // Point to the result page
     };
+    
 
     // Loading and error states
     if (loading) {
