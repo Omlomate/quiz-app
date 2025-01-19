@@ -36,18 +36,15 @@ The application is built using **React** for the frontend, leveraging **React ho
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
-   cd <project-directory>
+   git clone [<repository-url>](https://github.com/Omlomate/quiz-app)
+   cd quize-app
    ```
 
 2. **Install dependencies**:
    ```bash
    npm install
    ```
-   Or, if you are using Yarn:
-   ```bash
-   yarn install
-   ```
+   
 
 3. **Start the development server**:
    ```bash
@@ -79,6 +76,3 @@ The application is built using **React** for the frontend, leveraging **React ho
 
 ---
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
